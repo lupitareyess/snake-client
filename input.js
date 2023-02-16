@@ -28,6 +28,10 @@ const handleUserInput = function(key) {
     connection.write("Move: down");
   } if (key === 'd' || key === "D") {
     connection.write("Move: right")
+  } if (key === "h" || key === "H") {
+    connection.write('Say: Hello!')
+  } if (key === "k" || key === "K") {
+    connection.write('Say: Snakes everywhere!')
   }
 };
 
